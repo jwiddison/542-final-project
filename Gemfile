@@ -33,6 +33,10 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 # Use Devise for auth
 gem 'devise'
+# Use Slim for front-end templates
+gem 'slim-rails'
+# Use Bootstrap for UI Goodness
+gem 'bootstrap-sass'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
