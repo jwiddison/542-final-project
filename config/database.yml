@@ -18,16 +18,16 @@ db_config: &db_config
 
 development:
   <<: *db_config
-  database: migojo-rails_development
+  database: APPNAME_development
 
 test:
   <<: *db_config
-  database: migojo-rails_test
+  database: APPNAME_test
 
 staging:
   <<: *db_config
-  database: migojo-rails_staging
+  database: APPNAME_staging
 
 production:
   <<: *db_config
-  database: migojo-rails_production
+  database: APPNAME_production
