@@ -18,13 +18,15 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+$appleblue: #203248;
+
 body {
   font-family: 'Pavanam', sans-serif;
   margin-top: 50px;
 }
 
 .navbar-inverse {
-  background-color:#203248;
+  background-color: $appleblue;
   border-bottom:none;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   color: white;
@@ -32,4 +34,16 @@ body {
 
 .navbar-inverse .navbar-brand {
   color: white;
+}
+
+.row {
+  margin: 2em 0;
+}
+
+footer {
+  margin-top: 10em;
+  background-color: lighten($appleblue, 10%);
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 5px;
 }

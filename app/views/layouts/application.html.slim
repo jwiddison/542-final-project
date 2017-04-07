@@ -2,6 +2,7 @@ doctype html
 html
   head
     title Jazz Collective of Utah
+    =favicon_link_tag
     =csrf_meta_tags()
     meta content="width=device-width, initial-scale=1" name="viewport"
     =stylesheet_link_tag('application', media: 'all', 'data-turbolinks-track': 'reload')
@@ -11,5 +12,24 @@ html
     nav.navbar.navbar-inverse.navbar-fixed-top
       .container
         .navbar-header
-          a.navbar-brand href="#"  Rails Test
+          button.navbar-toggle data-target=".navbar-collapse" data-toggle="collapse" type="button" 
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand href="#"  Jazz Collective of Utah
+        .collapse.navbar-collapse.navbar-ex1-collapse
+          ul.nav.navbar-nav.navbar-right
+            li
+              =link_to(home_index_path)
+                | Home
+            li
+              =link_to(calendar_index_path)
+                | Calendar
+    
+    / Include sub-template content
     =yield
+
+    footer
+      .container
+        p Copyright &copy; 2017 - Jazz Collective of Utah

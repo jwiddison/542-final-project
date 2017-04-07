@@ -3,8 +3,8 @@
 .container
   .row
     .col-md-12
-      h1.text-center.section-header Welcome
-      hr
+      i.glyphicon.glyphicon-music.larger
+      p.lead The Jazz Collective of Utah brings musicians, students, educators, and jazz enthusiasts together as one community and allows presenters to connect with fans and students in a meaningful way so that everyone benefits. It is home to Utah’s new Jazz Education Network (JEN) State Unit launching this summer. Additionally, the JCU is poised to lobby for the arts in our community, fund scholarships, host training for educators, present clinics for students, host listening events, present festivals, serve as a jazz society, and much more!
   .row.callouts
     .col-md-4.text-center
       i.glyphicon.glyphicon-music
@@ -17,4 +17,5 @@
       p Some text
   .row
     .col-md-12
-      .calendar
+      =link_to(calendar_index_path)
+        button.btn.btn-default.center-block type="button" Check Out Upcoming Events
