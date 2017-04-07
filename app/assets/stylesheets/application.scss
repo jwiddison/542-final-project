@@ -20,5 +20,17 @@
 
 
 body {
-  margin-top: 65px;
+  font-family: 'Pavanam', sans-serif;
+  margin-top: 50px;
+}
+
+.navbar-inverse {
+  background-color:#203248;
+  border-bottom:none;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  color: white;
+}
+
+.navbar-inverse .navbar-brand {
+  color: white;
 }

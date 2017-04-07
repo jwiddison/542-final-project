@@ -37,6 +37,8 @@ gem 'devise'
 gem 'slim-rails'
 # Use Bootstrap for UI Goodness
 gem 'bootstrap-sass'
+# Calendar Gems
+gem 'momentjs-rails'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

@@ -1,3 +1,27 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#banner {
+  height:40em;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-image: url("drums.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#banner-title {
+  color:white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.section-header {
+  margin-top: 40px;
+}
+
+.callouts {
+  font-size: 14pt;
+}
