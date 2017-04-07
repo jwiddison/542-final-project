@@ -20,14 +20,6 @@ development:
   <<: *db_config
   database: APPNAME_development
 
-test:
-  <<: *db_config
-  database: APPNAME_test
-
-staging:
-  <<: *db_config
-  database: APPNAME_staging
-
 production:
   <<: *db_config
   database: APPNAME_production
