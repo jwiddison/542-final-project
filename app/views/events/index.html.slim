@@ -1,0 +1,33 @@
+h1 Listing events
+
+table
+  thead
+    tr
+      th Date
+      th Date
+      th Start
+      th End
+      th Title
+      th Description
+      th String
+      th
+      th
+      th
+
+  tbody
+    - @events.each do |event|
+      tr
+        td = event.date
+        td = event.date
+        td = event.start
+        td = event.end
+        td = event.title
+        td = event.description
+        td = event.string
+        td = link_to 'Show', event
+        td = link_to 'Edit', edit_event_path(event)
+        td = link_to 'Destroy', event, data: { confirm: 'Are you sure?' }, method: :delete
+
+br
+
+= link_to 'New Event', new_event_path
