@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    title Jazz Collective of Utah
+    =csrf_meta_tags()
+    meta content="width=device-width, initial-scale=1" name="viewport"
+    =stylesheet_link_tag('application', media: 'all', 'data-turbolinks-track': 'reload')
+    =javascript_include_tag('application', 'data-turbolinks-track': 'reload')
+    link href="https://fonts.googleapis.com/css?family=Pavanam" rel="stylesheet"
+  body
+    nav.navbar.navbar-inverse.navbar-fixed-top
+      .container
+        .navbar-header
+          a.navbar-brand href="#"  Rails Test
+    =yield
