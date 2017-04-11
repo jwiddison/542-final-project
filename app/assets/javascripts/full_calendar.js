@@ -3,6 +3,11 @@ initialize_calendar = function() {
   $('.calendar').each(function(){
     var calendar = $(this);
     calendar.fullCalendar({
+      googleCalendarApiKey: 'AIzaSyCsell7uPo2BuwU2JAqofdfDeI8z--_n20',
+      // events: {
+      //     googleCalendarId: 'widdison.jordan@gmail.com'
+      // },
+
       header: {
         left: 'prev,next today',
         center: 'title',
@@ -12,7 +17,7 @@ initialize_calendar = function() {
       selectHelper: true,
       editable: true,
       eventLimit: true,
-      events: '/events.json',
+      // events: '/events.json',
 
       select: function(start, end) {
         $.getScript('/events/new', function() {});
