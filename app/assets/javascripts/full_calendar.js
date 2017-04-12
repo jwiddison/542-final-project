@@ -6,13 +6,14 @@ initialize_calendar = function() {
       header: {
         left: 'prev,next today',
         center: 'title',
-        right: 'month,agendaWeek,agendaDay'
+        right: 'agendaWeek,month'
       },
       selectable: true,
       selectHelper: true,
       editable: true,
       eventLimit: true,
       events: '/events.json',
+      defaultView: 'agendaWeek',
 
       select: function(start, end) {
         $.getScript('/events/new', function() {
