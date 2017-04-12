@@ -39,6 +39,7 @@ gem 'slim-rails'
 gem 'bootstrap-sass'
 # For calendar
 gem 'momentjs-rails'
+gem 'simple_form'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

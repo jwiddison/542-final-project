@@ -18,8 +18,8 @@ db_config: &db_config
 
 development:
   <<: *db_config
-  database: APPNAME_development
+  database: jazzCollective_calendar_development
 
 production:
   <<: *db_config
-  database: APPNAME_production
+  database: jazzCollective_calendar_production
