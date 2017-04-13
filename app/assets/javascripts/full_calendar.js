@@ -8,12 +8,19 @@ initialize_calendar = function() {
         center: 'title',
         right: 'agendaWeek,month'
       },
+      defaultView: 'agendaWeek',
       selectable: true,
       selectHelper: true,
-      editable: true,
+      editable: false,
       eventLimit: true,
       events: '/events.json',
-      defaultView: 'agendaWeek',
+      googleCalendarApiKey: 'AIzaSyCsell7uPo2BuwU2JAqofdfDeI8z',
+      // events: {
+      //     googleCalendarId: 'widdison.jordan@group.calendar.google.com',
+      //     // googleCalendarId: 'https://calendar.google.com/calendar/embed?src=widdison.jordan%40gmail.com&ctz=America/Denver',
+      //     color: 'yellow',
+      //     textColor: 'black'
+      // },
 
       select: function(start, end) {
         $.getScript('/events/new', function() {
