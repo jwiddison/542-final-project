@@ -18,8 +18,7 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
-
-$navblue: #203248;
+@import "shared/colors";
 
 body {
   font-family: 'Pavanam', sans-serif;
@@ -27,7 +26,7 @@ body {
 }
 
 .navbar-inverse {
-  background-color: $navblue;
+  background-color: $blue;
   border-bottom:none;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   color: white;
@@ -48,7 +47,7 @@ body {
 
 footer {
   margin-top: 10em;
-  background-color: lighten($navblue, 15%);
+  background-color: lighten($blue, 15%);
   color: white;
   padding-top: 15px;
   padding-bottom: 5px;

@@ -1,23 +1,17 @@
 .container
   .row
-    .col-md-12
-      .btn.btn-default.pull-right data-toggle="modal" data-target="#suggestModal" Suggest a New Event
-      br
-      br
+    .col-sm-12
+    h1 Jazz Collective of Utah Calendar
+    hr
+    p Check out the calendar below to see upcoming events sponsored by the collective
+    p Suggest an event for the Collective by adding it to the calendar below
+  .row
+    .col-sm-12
       .calendar
-  / .row
-  /   iframe frameborder="0" height="600" scrolling="no" src="https://calendar.google.com/calendar/embed?src=widdison.jordan%40gmail.com&ctz=America/Denver" style=("border: 0") width="800" 
-
-      
+    
 #suggestModal.modal.fade aria-labelledby="suggestModalLabel" role="dialog" tabindex="-1" 
-  .modal-dialog role="document" 
+  .modal-dialog
     .modal-content
       .modal-header
-        button.close aria-label="Close" data-dismiss="modal" type="button" 
-          span aria-hidden="true"  &times;
-        h4#suggestModalLabel.modal-title Suggest a New Event
+        h1 Suggest an Event
       .modal-body
-        h1 Test
-      .modal-footer
-        button.btn.btn-default data-dismiss="modal" type="button"  Close
-        button.btn.btn-primary type="button"  Submit

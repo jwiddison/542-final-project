@@ -4,23 +4,26 @@ initialize_calendar = function() {
     var calendar = $(this);
     calendar.fullCalendar({
       header: {
-        left: 'prev,next today',
-        center: 'title',
-        right: 'agendaWeek,month'
+        left: 'title',
+        center: 'agendaDay,agendaWeek,month',
+        right: 'prev,today,next'
       },
+      titleFormat: 'MMMM YYYY',
       defaultView: 'agendaWeek',
       selectable: true,
       selectHelper: true,
-      editable: false,
+      editable: true,
       eventLimit: true,
       events: '/events.json',
-      googleCalendarApiKey: 'AIzaSyCsell7uPo2BuwU2JAqofdfDeI8z',
-      // events: {
-      //     googleCalendarId: 'widdison.jordan@group.calendar.google.com',
-      //     // googleCalendarId: 'https://calendar.google.com/calendar/embed?src=widdison.jordan%40gmail.com&ctz=America/Denver',
-      //     color: 'yellow',
-      //     textColor: 'black'
-      // },
+      columnFormat: {
+        week: 'ddd D'
+      },
+      slotLabelFormat: 'h (:mm)A',
+      allDayText: 'All-Day',
+      slotDuration: '00:30:00',
+      minTime: '07:00:00',
+      maxTime: '22:00:00',
+      windowResizeDelay: '0',
 
       select: function(start, end) {
         $.getScript('/events/new', function() {
