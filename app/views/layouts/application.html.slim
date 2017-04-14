@@ -2,13 +2,15 @@ doctype html
 html
   head
     title Jazz Collective of Utah
-    =favicon_link_tag
-    =csrf_meta_tags()
+    = favicon_link_tag
+    = csrf_meta_tags()
     meta content="width=device-width, initial-scale=1" name="viewport"
-    =stylesheet_link_tag('application', media: 'all', 'data-turbolinks-track': 'reload')
-    =javascript_include_tag('application', 'data-turbolinks-track': 'reload')
+    = stylesheet_link_tag('application', media: 'all', 'data-turbolinks-track': 'reload')
+    = javascript_include_tag('application', 'data-turbolinks-track': 'reload')
     link href="https://fonts.googleapis.com/css?family=Pavanam" rel="stylesheet"
+  
   body
+    
     nav.navbar.navbar-inverse.navbar-fixed-top
       .container
         .navbar-header
@@ -17,20 +19,15 @@ html
             span.icon-bar
             span.icon-bar
             span.icon-bar
-          a.navbar-brand href="#"  Jazz Collective of Utah
+          a.navbar-brand href=url_for(home_index_path)
+            i.glyphicon.glyphicon-music.larger
         .collapse.navbar-collapse.navbar-ex1-collapse
           ul.nav.navbar-nav.navbar-right
-            li
-              =link_to(home_index_path)
-                | Home
-            li
-              =link_to(calendar_index_path)
-                | Calendar
-    
-    / Include sub-template content
-    =yield
-    #remote_container
+            li = link_to 'Home', home_index_path
+            li = link_to 'Calendar', calendar_index_path
 
+    = yield
+    #remote_container
 
     footer
       .container

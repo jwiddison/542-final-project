@@ -3,6 +3,7 @@ initialize_calendar = function() {
   $('.calendar').each(function(){
     var calendar = $(this);
     calendar.fullCalendar({
+      height: 'auto',
       header: {
         left: 'title',
         center: 'agendaDay,agendaWeek,month',
@@ -14,6 +15,7 @@ initialize_calendar = function() {
       selectHelper: true,
       editable: true,
       eventLimit: true,
+      allDaySlot: false,
       events: '/events.json',
       columnFormat: {
         week: 'ddd D'
@@ -22,7 +24,7 @@ initialize_calendar = function() {
       allDayText: 'All-Day',
       slotDuration: '00:30:00',
       minTime: '07:00:00',
-      maxTime: '22:00:00',
+      maxTime: '23:00:00',
       windowResizeDelay: '0',
 
       select: function(start, end) {

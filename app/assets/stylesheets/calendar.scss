@@ -1,6 +1,10 @@
 // Place all the styles related to the calendar controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import "shared/colors";
+
+$grey: #F0F2F4;
+
 
 .calendar {
   margin-top: 4em;
@@ -13,4 +17,26 @@
 #delete-button {
   float: right;
   color: white;
+}
+
+.fc-clear {
+  height: 1em;
+}
+
+.fc-head-container {
+  background-color: lighten($blue, 10%);
+  color: white;
+  font-size: 12pt;
+
+  .fc-widget-header {
+    font-weight: lighter;
+  }
+}
+
+.fc-bg {
+  background-color: $grey;
+}
+
+.fc-today {
+  background-color: darken($grey, 20%) !important;
 }

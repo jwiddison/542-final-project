@@ -4,7 +4,6 @@
 
 #banner {
   height:40em;
-  background-attachment: fixed;
   background-size: cover;
   background-position: center;
   background-image: asset_url("drums.jpg");
@@ -13,9 +12,20 @@
   justify-content: center;
 }
 
+i {
+  font-size: 120%;
+}
+
+@media (max-width: 768px) {
+  i {
+    margin-top: 1.5em;
+  }
+}
+
 #banner-title {
   color:white;
   text-shadow: 2px 2px 2px #000000;
+  font-size: 34pt;
 }
 
 .section-header {
@@ -33,4 +43,55 @@
 .larger {
   font-size: 28pt;
   margin: 1em 0;
+  margin-top: -9px;
+}
+
+#img-banners-1 {
+  display: flex;
+  height: 20em;
+  width: 100%;
+
+  #jazz1 {
+    order: 1;
+    width: 40%;
+    height: 100%;
+    background-image: url('jazz1.jpeg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  #jazz2 {
+    order: 2;
+    width: 60%;
+    height: 100%;
+    background-image: url('jazz2.jpeg');
+    background-size: cover;
+    background-position: center;
+  }
+
+}
+
+#img-banners-2 {
+  display: flex;
+  height: 20em;
+  width: 100%;
+
+  #jazz3 {
+    order: 1;
+    width: 60%;
+    height: 100%;
+    background-image: url('jazz3.jpeg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  #jazz4 {
+    order: 2;
+    width: 40%;
+    height: 100%;
+    background-image: url('jazz4.jpeg');
+    background-size: cover;
+    background-position: center;
+  }
+
 }
