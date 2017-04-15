@@ -1,5 +1,6 @@
 doctype html
 html
+  
   head
     title Jazz Collective of Utah
     = favicon_link_tag
@@ -20,7 +21,8 @@ html
             span.icon-bar
             span.icon-bar
           a.navbar-brand href=url_for(home_index_path)
-            i.glyphicon.glyphicon-music.larger
+            i.glyphicon.glyphicon-music.larger 
+            | Jazz Collective of Utah
         .collapse.navbar-collapse.navbar-ex1-collapse
           ul.nav.navbar-nav.navbar-right
             li = link_to 'Home', home_index_path

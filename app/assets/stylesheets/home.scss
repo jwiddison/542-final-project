@@ -1,9 +1,10 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import "shared/colors";
 
 #banner {
-  height:40em;
+  height:20em;
   background-size: cover;
   background-position: center;
   background-image: asset_url("drums.jpg");
@@ -22,10 +23,9 @@ i {
   }
 }
 
-#banner-title {
-  color:white;
-  text-shadow: 2px 2px 2px #000000;
+#title {
   font-size: 34pt;
+  margin-bottom: 1em;
 }
 
 .section-header {
@@ -33,7 +33,8 @@ i {
 }
 
 .callouts {
-  font-size: 14pt;
+  font-size: 24pt;
+  font-weight: bolder;
 }
 
 .calendar {
@@ -41,9 +42,11 @@ i {
 }
 
 .larger {
-  font-size: 28pt;
+  font-size: 20pt;
   margin: 1em 0;
-  margin-top: -9px;
+  margin-top: -4px;
+  margin-right: 14px;
+  font-style: italic;
 }
 
 #img-banners-1 {
@@ -68,8 +71,8 @@ i {
     background-size: cover;
     background-position: center;
   }
-
 }
+
 
 #img-banners-2 {
   display: flex;
@@ -93,5 +96,41 @@ i {
     background-size: cover;
     background-position: center;
   }
+}
 
+@media (max-width: 768px) {
+  #img-banners-1 {
+    #jazz1 {
+      width: 100%;
+    }
+    #jazz2 {
+      display: none;
+      width: 0%;
+    }
+  }
+
+  #img-banners-2 {
+    #jazz3 {
+      display: none;
+      width: 0%;
+    }
+    #jazz4 {
+      width: 100%;
+    }
+  }
+}
+
+.btn-default {
+  margin: 2em 0;
+}
+
+#music:before,
+#sort:before,
+#volume:before {
+  color: white;
+  font-size: 160%;
+  background-color: $blue;
+  padding: 9px 12px;
+  border-radius: 50%;
+  margin: 3em 0;
 }
