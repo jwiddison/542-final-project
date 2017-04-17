@@ -25,8 +25,9 @@ html
             | Jazz Collective of Utah
         .collapse.navbar-collapse.navbar-ex1-collapse
           ul.nav.navbar-nav.navbar-right
-            li = link_to 'Home', home_index_path
-            li = link_to 'Calendar', calendar_index_path
+            li = nav_link 'Home', home_index_path
+            li = nav_link 'Calendar', calendar_index_path
+            
 
     = yield
     #remote_container
