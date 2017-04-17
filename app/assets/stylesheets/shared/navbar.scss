@@ -1,0 +1,26 @@
+@import "colors";
+
+.navbar-inverse {
+  background-color: $blue;
+  border-bottom: none;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  color: white;
+}
+
+.navbar-inverse .navbar-brand,
+  .navbar-inverse .navbar-collapse .navbar-nav li a {
+  color: white;
+}
+
+.navbar-inverse .navbar-collapse .navbar-nav li a:hover {
+  text-decoration: underline;
+}
+
+.navbar-inverse  .navbar-nav > .active {
+  a {
+    background-color: darken($blue, 5%);
+  }
+  a:hover {
+    background-color: darken($blue, 7%);
+  }
+}

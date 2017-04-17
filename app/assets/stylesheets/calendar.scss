@@ -2,6 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "shared/colors";
+@import "shared/constants";
 
 $grey: #F0F2F4;
 
@@ -39,4 +40,40 @@ $grey: #F0F2F4;
 
 .fc-today {
   background-color: darken($grey, 5%) !important;
+}
+
+#img-banners {
+  display: flex;
+  height: $banner-height;
+  width: 100%;
+
+  #jazz5 {
+    order: 1;
+    width: 50%;
+    height: 100%;
+    background-image: asset_url('jazz5.jpeg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  #jazz6 {
+    order: 2;
+    width: 50%;
+    height: 100%;
+    background-image: asset_url('jazz3.jpeg');
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (max-width: 768px) {
+  #img-banners {
+    #jazz5 {
+      width: 100%;
+    }
+    #jazz6 {
+      display: none;
+      width: 0%;
+    }
+  }
 }
