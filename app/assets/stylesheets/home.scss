@@ -36,12 +36,10 @@ i {
 .callouts {
   font-size: 24pt;
   font-weight: bolder;
-  margin: 1em 0;
+  margin-top: 2em;
+  margin-bottom: 1em;
 }
 
-.calendar {
-  margin-top: 40px;
-}
 
 .larger {
   font-size: 20pt;
@@ -122,10 +120,12 @@ i {
   }
 }
 
+.callout-icon {
+  margin-top: 3em;
+  margin-bottom: 0;
+}
 
-#music:before,
-#sort:before,
-#volume:before {
+.callout-icon:before {
   color: white;
   font-size: 160%;
   background-color: $blue;
