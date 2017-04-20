@@ -10,12 +10,24 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require bootstrap
 //= require jquery
 //= require jquery_ujs
-//= require bootstrap
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require_tree .
 //= require moment
 //= require fullcalendar/fullcalendar
 //= require daterangepicker
+
+
+$( document ).ready( function () {
+  $( window ).resize( function () {
+    var footerHeight = $('.footer').outerHeight();
+    var stickFooterPush = $('.push').height(footerHeight);
+
+    $('.wrapper').css({'marginBottom':'-' + footerHeight + 'px'});
+  });
+
+  $( window ).resize();
+});

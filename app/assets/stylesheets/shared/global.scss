@@ -1,14 +1,44 @@
 @import "colors";
 
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Work Sans', sans-serif;
   margin-top: 50px;
   background-color: #F8F8FF;
 }
 
+html, body {
+	height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+}
+
+.caret {
+  margin-left: .5em;
+}
+
 .row {
   margin-top: 2em;
   margin-bottom: 2em;
+}
+
+.dropdown-menu {
+  background-color: lighten($blue, 5%);
+  border: none;
+  border-radius: 0;
+}
+
+.dropdown-menu:after:hover {
+  background-color: $blue;
 }
 
 footer {
