@@ -1,10 +1,5 @@
-// Place all the styles related to the calendar controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
 @import "shared/colors";
 @import "shared/constants";
-
-$grey: #F0F2F4;
 
 .calendar {
   margin-top: 4em;
@@ -76,4 +71,32 @@ $grey: #F0F2F4;
       width: 0%;
     }
   }
+}
+
+.fc-time-grid-event {
+  background-color: rgba(255,255,255,0.7) !important;
+  border-radius: 0;
+  color: $dark-grey;
+  margin-left: -3px;
+  margin-right: -4px;
+  margin-bottom: -1px;
+  padding-left: 13px;
+
+  .fc-title {
+    color: $med-grey;
+  }
+
+  .fc-time {
+    color: $med-grey;
+  }
+}
+
+.fc-time-grid-event:after {
+  background-color: lighten($blue, 10%);
+  position: absolute;
+  content: "";
+  width: 10px;
+  left: 0;
+  top: 0;
+  bottom: 0;
 }

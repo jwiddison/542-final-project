@@ -31,4 +31,6 @@ Next, create a database, and corresponding migrations using the command `ruby ma
 
 Overall, I feel that this project shows a lot of the things that I have learned this semester in terms of developing web applications.  I plugged an external library into the project, learned how to interact with it, use a variety of new technologies (Rails, SASS, and Slim are all new to me), and created a responsive, functional, and attractive looking web application.  I learned how to deploy Rails applications to Heroku, including provisioning the resources for the back-end database, and set up a web-hook to the git repository to re-deploy the application any time there is a commit pushed to the master branch of my git repository.  The web is an exciting place to be working right now, and I'm excited to learn more about it as time goes on.
 
-For future versions of the application, I'd like to pull events into the calendar from a google calendar, which I know is possible.  I'd also like to implement some kind of Authentication system so that not just anyone can add or delete events from the calendar.  I'd also like to get some design consultation from a designer.  That's something I'm always working on.
+For future versions of the application, I'd like to pull events into the calendar from a google calendar, which I know is possible.
+I'd also like to get some design consultation from a designer.  That's something I'm always working on.
+Overall, I really enjoyed this project, and this class!

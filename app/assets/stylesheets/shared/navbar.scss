@@ -15,6 +15,18 @@
 .navbar-inverse .navbar-collapse .navbar-nav li a:hover {
   text-decoration: underline;
 }
+.navbar-inverse .navbar-collapse .navbar-nav li a:focus {
+  background-color: darken($blue, 10%);
+}
+.navbar-inverse .navbar-collapse .navbar-nav .dropdown-menu li a:hover {
+  background-color: $blue;
+}
+
+.dropdown-menu {
+  background-color: lighten($blue, 5%);
+  border: none;
+  border-radius: 0;
+}
 
 .navbar-inverse  .navbar-nav > .active {
   a {

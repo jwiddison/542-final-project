@@ -1,19 +1,9 @@
 @import "colors";
 
-* {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
 body {
   font-family: 'Work Sans', sans-serif;
   margin-top: 50px;
-  background-color: #F8F8FF;
-}
-
-html, body {
-	height: 90%;
+  background-color: $body-background;
 }
 
 .caret {
@@ -25,14 +15,8 @@ html, body {
   margin-bottom: 2em;
 }
 
-.dropdown-menu {
-  background-color: lighten($blue, 5%);
-  border: none;
-  border-radius: 0;
-}
-
-.dropdown-menu:after:hover {
-  background-color: $blue;
+.lead {
+  font-size: 12pt;
 }
 
 footer {

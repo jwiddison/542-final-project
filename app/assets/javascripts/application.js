@@ -11,32 +11,10 @@
 // about supported directives.
 //
 //= require jquery
-// = require jquery_ujs
+//= require jquery_ujs
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require_tree .
 //= require moment
 //= require fullcalendar/fullcalendar
 //= require daterangepicker
-
-
-$( document ).ready( function () {
-  $( window ).resize( function () {
-    var footerHeight = $('.footer').outerHeight();
-    var stickFooterPush = $('.push').height(footerHeight);
-
-    $('.wrapper').css({'marginBottom':'-' + footerHeight + 'px'});
-  });
-
-  $( window ).resize();
-
-});
-
-
-$(document).ready(function(){
-  // Add Form-control classes to Devise Form Elements
-  $('#user_email').addClass('form-control');
-  $('#user_password').addClass('form-control');
-  $('#user_password_confirmation').addClass('form-control');
-  $('#user_current_password').addClass('form-control');
-});
