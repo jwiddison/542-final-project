@@ -30,4 +30,14 @@ $( document ).ready( function () {
   });
 
   $( window ).resize();
+
+});
+
+
+$(document).ready(function(){
+  // Add Form-control classes to Devise Form Elements
+  $('#user_email').addClass('form-control');
+  $('#user_password').addClass('form-control');
+  $('#user_password_confirmation').addClass('form-control');
+  $('#user_current_password').addClass('form-control');
 });
